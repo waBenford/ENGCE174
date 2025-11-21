@@ -18,7 +18,7 @@ public class Lab1_5 {
 		} else if ( Number == 4 ) {
 			System.out.println( "Mocha" );
 		} else {
-			System.out.println( "Only number 1-4 Please try agian" );
+			System.out.println( "Invalid Menu" );
 		}
 	}
 
