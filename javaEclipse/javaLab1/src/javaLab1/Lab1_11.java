@@ -1,6 +1,5 @@
 package javaLab1;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Lab1_11 {
 
@@ -22,9 +21,11 @@ public class Lab1_11 {
 	}
 	
 	public static int sumArray( int[] numbers ) {
-		int sum = Arrays.stream( numbers ).sum(); 
+		int sum = 0;
+		for ( int number : numbers  ) { //วนทีละตัวแล้วเก็บใน number
+			sum += number;
+		}
 		return sum;
-	}//ส่ง arrayNumbers เข้าไปในท่อ(Stream) แล้วสั่งให้ท่อนั้นบวก(sum) ค่าทั้งหมดออกมา
-	 //สั่งให้คลาส Arrays เรียกใช้เมทอด stream() โดยใช้ numbers เป็นวัตถุดิบ
+	}
 
 }
