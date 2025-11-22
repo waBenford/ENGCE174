@@ -22,8 +22,8 @@ public class Lab1_11 {
 	
 	public static int sumArray( int[] numbers ) {
 		int sum = 0;
-		for ( int number : numbers  ) { //วนทีละตัวแล้วเก็บใน number
-			sum += number;
+		for ( int i = 0; i < numbers.length; i++ ) {
+			sum += numbers[i];
 		}
 		return sum;
 	}
