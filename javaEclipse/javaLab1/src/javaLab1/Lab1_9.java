@@ -4,24 +4,24 @@ import java.util.Scanner;
 public class Lab1_9 {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner( System.in );
+		Scanner getValue = new Scanner( System.in );
 		
-		System.out.print( "Quantity: " );
-		int N1 = input.nextInt();
-		int[] qty = new int[N1];
+		System.out.print( "quantity: " );
+		int numqty = getValue.nextInt();
+		int[] qty = new int[numqty];
 		float sum = 0;
-		float Average = 0;
+		float avr = 0;
 		
-		for ( int i = 0; i < N1; i++ ) {
+		for ( int i = 0; i < numqty; i++ ) {
 			
 			System.out.print( "" );
-			qty[i] = input.nextInt();
+			qty[i] = getValue.nextInt();
 			
 			sum += qty[i];
 		}
 		
-		Average = sum / N1;
-		System.out.println( "sum = " + Average );
+		avr = sum / numqty;
+		System.out.println( "sum = " + avr );
 
 	}
 
