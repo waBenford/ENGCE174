@@ -25,7 +25,7 @@ public class Lab1_13 {
 			
 		}
 		
-		System.out.println( "" + online );
+		System.out.println( "Online: " + online );
 			
 		}
 		
