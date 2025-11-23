@@ -4,24 +4,24 @@ import java.util.Scanner;
 public class Lab1_4 {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner( System.in );
+		Scanner getValue = new Scanner( System.in );
 		
-		System.out.print( "" );
-		int Score = scanner.nextInt();
+		System.out.print( "Your Score: " );
+		int score = getValue.nextInt();
 		
-		if ( Score < 0 || Score > 100 ) {
+		if ( score < 0 || score > 100 ) {
 			System.out.println( "Invalid Score" );
 		}
-		else if ( Score >= 80 ) {
+		else if ( score >= 80 ) {
 			System.out.println( "A" );
 		}
-		else if ( Score >= 70 ) {
+		else if ( score >= 70 ) {
 			System.out.println( "B" );
 		}
-		else if ( Score >= 60 ) {
+		else if ( score >= 60 ) {
 			System.out.println( "C" );
 		}
-		else if ( Score >= 50 ) {
+		else if ( score >= 50 ) {
 			System.out.println( "D" );
 		}
 		else {
