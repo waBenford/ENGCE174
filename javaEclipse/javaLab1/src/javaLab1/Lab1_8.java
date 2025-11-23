@@ -4,25 +4,25 @@ import java.util.Scanner;
 public class Lab1_8 {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner( System.in );
+		Scanner getValue = new Scanner( System.in );
 		
 		System.out.print( "quantity: " );
-		int N = scanner.nextInt();
-		int[] qty = new int[N];
-		int maxValue = Integer.MIN_VALUE;
+		int num = getValue.nextInt();
+		int[] qty = new int[num];
+		int max = Integer.MIN_VALUE;
 
-		for ( int i = 0; i < N; i++ ) {
+		for ( int i = 0; i < num; i++ ) {
 			
 			System.out.print( "" );
-			qty[i] = scanner.nextInt();
+			qty[i] = getValue.nextInt();
 			
-			if ( qty[i] > maxValue ) {
-				maxValue = qty[i];
+			if ( qty[i] > max ) {
+				max = qty[i];
 			}
 			
 		}
 		
-		System.out.println( "Maximum Value: " + maxValue );
+		System.out.println( "Maximum Value: " + max );
 		
 	}
 
