@@ -6,7 +6,7 @@ public class Lab1_5 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner( System.in );
 
-		System.out.print( "" );
+		System.out.print( "Choose menu: " );
 		int Number = scanner.nextInt();
 		
 		if ( Number == 1 ) {
