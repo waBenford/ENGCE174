@@ -1,4 +1,4 @@
-package javaLab3;
+package javaLab3.lab3_1;
 import java.util.Scanner;
 
 public class Lab3_1 {
