@@ -72,7 +72,7 @@ class User {
 		}
 	}
 	
-	public String getPassword() { return this.password; }
+	public String getPassword() { return this.password; } //getter
 	
 	public void setPassword( String newPassword ) {
 		if( newPassword.length() >= minPasswordLength ) {
