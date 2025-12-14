@@ -10,39 +10,36 @@ public class Lab3_9 {
 		int minLength1 = getValue.nextInt();
 		getValue.nextLine();
 		
+		User.setMinLength(minLength1);
+
 		System.out.print( "User Name 1: " );
 		String user1_name = getValue.nextLine();
-		
 		System.out.print( "Password: " );
 		String user1_pass = getValue.nextLine();
+		User user1 = new User( user1_name, user1_pass );
 		
 		System.out.print( "User Name 2: " );
 		String user2_name = getValue.nextLine();
-		
 		System.out.print( "Password: " );
 		String user2_pass = getValue.nextLine();
+		User user2 = new User( user2_name, user2_pass );
 		
 		System.out.print( "minLength 2: " );
 		int minLength2 = getValue.nextInt();
 		getValue.nextLine();
+
+		User.setMinLength(minLength2);
 		
 		System.out.print( "New password: " );
 		String user2_newPass = getValue.nextLine();
-				
-		User.setMinLength(minLength1);
-		
-		User user1 = new User( user1_name, user1_pass );
-		User user2 = new User( user2_name, user2_pass );
-		
-		User.setMinLength(minLength2);
-		
 		user2.setPassword(user2_newPass);
-		
+				
 		System.out.println( user1.getPassword() );
 		System.out.println( user2.getPassword() );
 	}
 
 }
+
 
 class User {
 	private String name;
