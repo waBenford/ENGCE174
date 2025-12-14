@@ -8,20 +8,26 @@ public class Lab3_10 {
 
 		System.out.print( "Quantity: " );
 		int qty =  getValue.nextInt();
+		getValue.nextLine(); 
 		
 		for( int i = 0; i < qty; i++ ) {
-			System.out.print( "" );
-			String SoL = getValue.nextLine();
+			String SoL = getValue.nextLine(); 
 			
 			if( SoL.equals( "SET" ) ) {
 				int newLog = getValue.nextInt();
+				getValue.nextLine(); 
 				SystemLogger.setLogLevel(newLog);
+				
 			}else if( SoL.equals( "LOG" ) ) {
 				int newSet = getValue.nextInt();
-				SystemLogger.log(newSet, SoL);
+				getValue.nextLine(); 
+				
+				String messageContent = getValue.nextLine(); 
+				SystemLogger.log(newSet, messageContent);
 				
 			}
 		}
+		getValue.close();
 	}
 
 }
@@ -46,9 +52,9 @@ class SystemLogger {
 	}
 	
 	public static void log( int messageLevel, String message ) {
-		if( messageLevel >= currentLogLevel ) {
+		if( messageLevel >= currentLogLevel ) { 
 			String level = getLevelName(messageLevel);
-			System.out.println( "[" + level + "]: [" + message + "]" );
+			System.out.println( "[" + level + "]: " + message ); 
 		}
 	}
 }
