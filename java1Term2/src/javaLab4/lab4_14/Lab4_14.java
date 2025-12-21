@@ -7,13 +7,11 @@ class ScoreBoard {
 
     public ScoreBoard(String gameName, int[] scores) {
         this.gameName = gameName;
-        // Shallow Copy: กำหนดค่า reference โดยตรง
         this.scores = scores;
     }
 
     public ScoreBoard(ScoreBoard other) {
         this.gameName = other.gameName;
-        // Deep Copy: สร้าง Array ใหม่และคัดลอกค่าสมาชิกทีละตัว
         this.scores = new int[other.scores.length];
         for (int i = 0; i < other.scores.length; i++) {
             this.scores[i] = other.scores[i];
